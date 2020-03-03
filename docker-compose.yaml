@@ -1,0 +1,29 @@
+version: '3.3'
+
+services:
+   db:
+     image: mysql:5.7
+     volumes:
+       - db_data:/var/lib/mysql
+     restart: always
+     env_file:
+      - .env
+
+   wordpress:
+     depends_on:
+       - db
+     image: wordpress:latest
+     ports:
+       - "8001:80"
+     volumes:
+        - ./wordpress:/var/www/html/wp-content
+     restart: always
+     env_file:
+      - .env
+     environment:
+        WORDPRESS_CONFIG_EXTRA: 
+          define('FS_METHOD', 'direct' );
+
+      
+volumes:
+    db_data: {}
