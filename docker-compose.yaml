@@ -4,11 +4,13 @@ services:
    db:
      image: mysql:5.7
      volumes:
-       - db_data:/var/lib/mysql
+      - ./database/data:/var/lib/mysql
+      - ./database/dumps:/dumps
+      - ./database/dumps:/docker-entrypoint-initdb.d
      restart: always
      env_file:
       - .env
-
+ 
    wordpress:
      depends_on:
        - db
@@ -17,6 +19,8 @@ services:
        - "8001:80"
      volumes:
         - ./wordpress:/var/www/html/wp-content
+        - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+
      restart: always
      env_file:
       - .env
@@ -25,5 +29,3 @@ services:
           define('FS_METHOD', 'direct' );
 
       
-volumes:
-    db_data: {}
