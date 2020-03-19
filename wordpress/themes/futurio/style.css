@@ -648,7 +648,7 @@ article.elementor-news.col-md-3:nth-child(4n+1) {
     font-size: 30px;
 }
 .container-fluid.archive-page-header {
-    background-color: #f8f8f8;
+    background-color: #000;
     border-bottom: 1px solid #e2e2e2;
 }
 .updated:not(.published) {
@@ -706,6 +706,11 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     display: block;
     width: 100%;
 }
+
+::placeholder {
+    color: #000!important;
+}
+
 .radio, .checkbox {
     display: inline-block;
 }
@@ -791,9 +796,11 @@ select {
     margin: 0;
     line-height: 18px;
     display: inline-block;
-    background-color: #fff;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     z-index: 1;
     font-weight: 300;
+    border-radius: 15px;
 }
 h1.site-title, .site-title {
     margin: 0;
@@ -888,7 +895,7 @@ h1.site-title, .site-title {
 #site-navigation {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    color: #000;
+    color: #fff;
     border-radius: 0;
 }
 #site-navigation .container {
@@ -1123,11 +1130,11 @@ a.comment-reply-link,
     box-shadow: none;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-    border: 1px solid;
-    border-radius: 3px;
     padding: 8px 20px;
     color: #fff;
-    background-color: transparent;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 10px;
 }
 .woocommerce #reviews #comments ol.commentlist {
     padding-left: 0;
@@ -1261,7 +1268,6 @@ a.post-edit-link {
     font-weight: 700;
 }
 .news-item h2 a {
-    color: #000;
     font-weight: 300;
 }
 .news-thumb {
@@ -1297,7 +1303,6 @@ a.post-edit-link {
     font-weight: 300;
 }
 .author-meta a {
-    color: #000;
     text-transform: uppercase;
     font-size: 14px;
     margin-left: 4px;
@@ -2187,4 +2192,15 @@ span.extra-comments-meta a {
 .transtion-fluid:hover {
    border-radius: 64% 36% 66% 34% / 52% 44% 56% 48%;
 
+}
+
+.navbar-brand .site-branding-text h1.site-title a,.navbar-brand .site-branding-text .site-title a,
+.navbar-brand .site-branding-text .site-description {
+    color: #fff!important;
+}
+
+#sidebar .widget-title h3 {
+    color: #fff!important;
+    font-weight: 300!important;
+    letter-spacing: 1px;
 }
