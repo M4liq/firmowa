@@ -677,6 +677,22 @@ h1.single-title {
     position: relative;
     padding-right: 55px;
 }
+
+.single-head .single-title {
+    text-align: left;
+}
+
+.single-title {
+    text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+   .single-head {
+       text-align: center;
+       padding: 0;
+   }
+}
+
 .single-entry-summary, .entry-footer {
     margin-top: 15px;
     width: 100%;
@@ -693,9 +709,9 @@ h1.single-title {
     margin-bottom: 5px;
 }
 input, textarea {
-    background-color: #fff;
+    background-color: #000;
     padding: 6px;
-    color: #464a4c;
+    color: white;
     border-radius: 0;
 }
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
@@ -705,10 +721,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     border-radius: 3px;
     display: block;
     width: 100%;
-}
-
-::placeholder {
-    color: #000!important;
+    padding: 2px;
 }
 
 .radio, .checkbox {
@@ -796,11 +809,12 @@ select {
     margin: 0;
     line-height: 18px;
     display: inline-block;
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: #000;
     z-index: 1;
     font-weight: 300;
     border-radius: 15px;
+    border-color: white;
+    border: 1px solid;
 }
 h1.site-title, .site-title {
     margin: 0;
@@ -1130,11 +1144,21 @@ a.comment-reply-link,
     box-shadow: none;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-    padding: 8px 20px;
-    color: #fff;
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    border-radius: 10px;
+    color: white;
+}
+
+::placeholder {
+    font-weight: normal;
+}
+
+.search-submit {
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 1px solid white;
+}
+.search-submit:active {
+    border: 0!important;
 }
 .woocommerce #reviews #comments ol.commentlist {
     padding-left: 0;
@@ -1218,6 +1242,16 @@ span.posted-date-year {
 .comments-meta a {
     color: #FFF;
 }
+
+@media screen and (max-width: 425px) {
+    .comments-meta {
+        display: none;
+    }
+    .content-date-comments {
+        display: none;
+    }
+}
+
 .single-head .comments-meta {
     position: absolute;
     right: 0;
@@ -2184,7 +2218,7 @@ span.extra-comments-meta a {
        /* border: 1px solid white;
         background-color: white;*/
     background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(90deg, rgb(57, 36, 177) 0%, rgba(253,29,29,1) 50%, rgb(239, 255, 19) 100%);
     border-radius: 48% 52% 31% 69% / 56% 62% 38% 44%;
     transition: ease-out 2s;
 }
