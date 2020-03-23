@@ -101,11 +101,11 @@ msgid "WooCommerce archive sidebar"
 msgstr ""
 
 #: functions.php:333
-msgid "Posted in"
+msgid "Dodano w:"
 msgstr ""
 
 #: functions.php:337
-msgid "Tags"
+msgid "Tagi :"
 msgstr ""
 
 #: functions.php:361
@@ -147,7 +147,7 @@ msgid "Next"
 msgstr ""
 
 #: functions.php:557
-msgid "By"
+msgid "Dodane przez"
 msgstr ""
 
 #: functions.php:573

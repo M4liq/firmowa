@@ -330,11 +330,11 @@ if ( !function_exists( 'futurio_entry_footer' ) ) :
 
 					// Make sure there's more than one category before displaying.
 					if ( $categories_list ) {
-						echo '<div class="cat-links"><span class="space-right">' . esc_html__( 'Posted in', 'futurio' ) . '</span>' . wp_kses_data( $categories_list ) . '</div>';
+						echo '<div class="cat-links"><span class="space-right">' . esc_html__( 'Dodano w:', 'futurio' ) . '</span>' . wp_kses_data( $categories_list ) . '</div>';
 					}
 
 					if ( $tags_list ) {
-						echo '<div class="tags-links"><span class="space-right">' . esc_html__( 'Tags', 'futurio' ) . '</span>' . wp_kses_data( $tags_list ) . '</div>';
+						echo '<div class="tags-links"><span class="space-right">' . esc_html__( 'Tagi:', 'futurio' ) . '</span>' . wp_kses_data( $tags_list ) . '</div>';
 					}
 				}
 			}
@@ -395,14 +395,14 @@ if ( !function_exists( 'futurio_widget_date_comments' ) ) :
 		<?php if ( !comments_open() && get_theme_mod( 'blog_archive_comments', 'on' ) == 'on' || !comments_open() && is_singular() ) { ?>
 			<div class="comments-meta comments-off">
 				<?php esc_html_e( 'Off', 'futurio' ); ?>
-				<i class="fa fa-comments-o"></i>
+				<i class="far fa-comments"></i>
 			</div>
 		<?php } elseif ( comments_open() && get_theme_mod( 'blog_archive_comments', 'on' ) == 'on' || comments_open() && get_theme_mod( 'blog_archive_comments', 'on' ) == 'off' || is_singular() ) { ?>
 			<div class="comments-meta coments-commented">
 				<a href="<?php the_permalink(); ?>#comments" rel="nofollow" title="<?php esc_attr_e( 'Comment on ', 'futurio' ) . the_title_attribute(); ?>">
 					<?php echo absint( get_comments_number() ); ?>
 				</a>
-				<i class="fa fa-comments-o"></i>
+				<i class="far fa-comments"></i>
 			</div>
 		<?php } ?>
 		<?php
@@ -554,7 +554,7 @@ if ( !function_exists( 'futurio_author_meta' ) ) :
 	function futurio_author_meta() {
 		?>
 		<span class="author-meta">
-			<span class="author-meta-by"><?php esc_html_e( 'By', 'futurio' ); ?></span>
+			<span class="author-meta-by"><?php esc_html_e( 'Dodane przez', 'futurio' ); ?></span>
 			<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ) ); ?>">
 				<?php the_author(); ?>
 			</a>
