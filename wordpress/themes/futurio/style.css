@@ -575,8 +575,19 @@ ul ul .menu-item-has-children.pull-left>.dropdown-menu {
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
+
+.menu-item .dropdown-menu {
+    background-color: #000;
+}
+
+.menu-item .dropdown-menu a {
+    color: #fff;
+}
+
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-    background-color: #fff;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgb(243, 19, 19) 0%, rgb(253, 122, 14) 50%, rgb(243, 19, 19) 100%);
+
 }
 .navbar-toggle {
     border: 1px solid #ccc;
@@ -2218,7 +2229,7 @@ span.extra-comments-meta a {
        /* border: 1px solid white;
         background-color: white;*/
     background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgb(57, 36, 177) 0%, rgba(253,29,29,1) 50%, rgb(239, 255, 19) 100%);
+    background: linear-gradient(90deg, rgb(243, 19, 19) 0%, rgb(253, 122, 14) 50%, rgb(243, 19, 19) 100%);
     border-radius: 48% 52% 31% 69% / 56% 62% 38% 44%;
     transition: ease-out 2s;
 }
@@ -2238,3 +2249,14 @@ span.extra-comments-meta a {
     font-weight: 300!important;
     letter-spacing: 1px;
 }
+
+::-moz-selection { /* Code for Firefox */
+    color: #000;
+    background-color: rgb(253, 122, 14)
+    opacity: 1;
+  }
+  
+  ::selection {
+    color: #000;
+    background-color: rgb(253, 122, 14);
+  }
