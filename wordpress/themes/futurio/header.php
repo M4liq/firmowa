@@ -7,6 +7,18 @@
         <?php wp_head(); ?>
     </head>
     <body id="blog" <?php body_class(); ?>>
+    <section class="preloader dark">
+        <div class="spinner">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </section>
+    
         <?php wp_body_open(); ?>
         <?php do_action('futurio_header_body'); ?>
         <div class="page-wrap">

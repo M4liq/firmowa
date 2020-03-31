@@ -42,7 +42,7 @@ Kirki::add_field( 'futurio_extra', array(
 		array(
 			'property' => 'padding',
 			'element'  => '.navbar-nav > li > a, .menu-cart, .menu-account, .top-search-icon, .menu-button, .offcanvas-sidebar-toggle',
-      'media_query'	 => '@media (min-width: 768px)',
+      'media_query'	 => '@media (min-width: 996px)',
 		),
 	),
   'active_callback'	 => array(
