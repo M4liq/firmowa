@@ -1,6 +1,13 @@
+
+ 
+
 jQuery( document ).ready( function ( $ ) {
     'use strict';
 
+    $(window).load(function() {
+        $('.preloader').fadeOut(1000);
+     });
+  
     $( '.navbar .dropdown-toggle' ).hover( function () {
         $( this ).addClass( 'disabled' );
     } );
