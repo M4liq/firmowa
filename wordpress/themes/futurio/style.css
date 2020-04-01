@@ -163,7 +163,7 @@ a, a:active, a:hover, a:focus {
     padding: 5px;
     margin-top: 25px;
     border: 2px solid;
-    border-color: rgb(255, 39, 165);
+    border-color: #c12680;
     border-radius: 5px;
     -webkit-transition: ease-in 0.15s;
     transition: ease-in 0.25s;
@@ -172,7 +172,7 @@ a, a:active, a:hover, a:focus {
 
 .navbar-default .navbar-nav > li:last-child:hover > a,
 .navbar-default .navbar-nav > li:last-child > a:focus {
-    background: rgb(255, 39, 165);
+    background: #c12680;
     color: white;
 }
 
@@ -186,7 +186,7 @@ a, a:active, a:hover, a:focus {
 .navbar-default .navbar-nav > li:last-child.active > a, 
 .navbar-default .navbar-nav > li:last-child.active > a:hover, 
 .navbar-default .navbar-nav > li:last-child.active > a:focus {
-    background: rgb(255, 39, 165);
+    background: #c12680;
     color: white;
 }
 
@@ -338,7 +338,7 @@ a:active {
         margin-right: 15px;
         margin-left: 15px;
         text-align: center;
-        background: rgb(255, 39, 165);
+        background: #c12680;
     }
 
     .menu-container {
@@ -2300,7 +2300,7 @@ span.extra-comments-meta a {
        /* border: 1px solid white;
         background-color: white;*/
     background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgb(243, 19, 19) 0%, rgb(253, 122, 14) 50%, rgb(243, 19, 19) 100%);
+    background: linear-gradient(90deg,#c12680 0%, #f045b7 50%, #c12680 100%);
     border-radius: 48% 52% 31% 69% / 56% 62% 38% 44%;
     transition: ease-out 2s;
 }
@@ -2449,7 +2449,7 @@ span.extra-comments-meta a {
     width: 128px;
     height: 64px;
     margin-top: -64px;
-    margin-left: -64px;
+    margin-left: -64px; 
     border-color: #c12680;
     border-top-left-radius: 72px;
     border-top-right-radius: 72px;
