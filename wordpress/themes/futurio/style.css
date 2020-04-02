@@ -272,7 +272,7 @@ a:active {
         top: 16px;;
     }
     .navbar-nav li:hover .dropdown-menu{
-        border-top: 4px solid #ccc;
+        border-top: 4px solid #fff;
         border-radius: 0;
         transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
@@ -647,10 +647,10 @@ ul ul .menu-item-has-children.pull-left>.dropdown-menu {
 
 }
 .navbar-toggle {
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #ccc;
+    background-color: #fff;
 }
 .navbar-nav > li > a {
     border-bottom: 0;
@@ -1189,7 +1189,7 @@ cite.fn {
     font-weight: bold;
 }
 a.comment-reply-link {
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
     padding: 10px 20px;
 }
 .reply {
@@ -2322,18 +2322,17 @@ span.extra-comments-meta a {
 }
 
 ::-moz-selection { /* Code for Firefox */
-    color: #000;
     background-color: rgb(253, 122, 14);
     opacity: 1;
   }
   
   ::selection {
-    color: #000;
     background-color: rgb(253, 122, 14);
   }
 
 /* Preloader */
   section.preloader {
+    display: none;
     position: fixed;
     left: 0;
     z-index: 20;
