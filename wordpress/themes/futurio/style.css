@@ -176,6 +176,125 @@ a, a:active, a:hover, a:focus {
     color: white;
 }
 
+.navbar-default .navbar-nav > li:last-child.red> a {
+    border-color: #df1717;
+}
+
+.navbar-default .navbar-nav > li:last-child:hover.red > a,
+.navbar-default .navbar-nav > li:last-child.red > a:focus {
+    background: #df1717;
+}
+
+.navbar-default .navbar-nav > li:last-child.pink> a {
+    border-color: #c12680;
+}
+
+.navbar-default .navbar-nav > li:last-child:hover.pink > a,
+.navbar-default .navbar-nav > li:last-child.pink > a:focus {
+    background: #c12680;
+}
+
+.navbar-default .navbar-nav > li:last-child.green> a {
+    border-color: #3fcc56;
+}
+
+.navbar-default .navbar-nav > li:last-child:hover.green > a,
+.navbar-default .navbar-nav > li:last-child.green > a:focus {
+    background: #3fcc56;
+}
+
+.navbar-default .navbar-nav > li:last-child.blue> a {
+    border-color: #2172b8;
+}
+
+.navbar-default .navbar-nav > li:last-child:hover.blue > a,
+.navbar-default .navbar-nav > li:last-child.blue > a:focus {
+    background: #2172b8;
+}
+
+.navbar-default .navbar-nav > li:last-child.orange> a {
+    border-color: #e98707 ;
+}
+
+.navbar-default .navbar-nav > li:last-child:hover.orange > a,
+.navbar-default .navbar-nav > li:last-child.orange > a:focus {
+    background: #e98707 ;
+}
+
+.navbar-default .navbar-nav > li:last-child.yellow> a {
+    border-color: #ddc918;
+}
+
+.navbar-default .navbar-nav > li:last-child:hover.yellow > a,
+.navbar-default .navbar-nav > li:last-child.yellow > a:focus {
+    background: #ddc918;
+    color: #000;
+}
+
+
+
+.transtion-fluid:hover {
+    border-radius: 64% 36% 66% 34% / 52% 44% 56% 48%;
+
+}
+
+.transtion-fluid {
+    border-radius: 48% 52% 31% 69% / 56% 62% 38% 44%;
+    transition: ease-out 2s;
+    background: #c12680;
+    background: linear-gradient(90deg,#c12680 0%, #f045b7 50%, #c12680 100%);
+}
+
+.transtion-fluid.red {
+    background: #df1717;
+    background: linear-gradient(90deg,#df1717 0%, #ff1b39 50%, #df1717 100%);
+}
+
+.transtion-fluid.orange {
+    background: #e98707 ;
+    background: linear-gradient(90deg,#e98707 0%, #ffa229 50%, #e98707  100%);
+}
+
+.transtion-fluid.green {
+    background: #3fcc56 ;
+    background: linear-gradient(90deg,#3fcc56 0%, #4bd863 50%, #3fcc56  100%);
+}
+
+.transtion-fluid.blue {
+    background: #2172b8 ;
+    background: linear-gradient(90deg,#2172b8 0%, #3390e0 50%, #2172b8  100%);
+}
+
+.transtion-fluid.pink {
+    background: #c12680;
+    background: linear-gradient(90deg,#c12680 0%, #f045b7 50%, #c12680 100%);
+}
+
+.dropdown-menu > .active > a.pink, .dropdown-menu > .active > a.pink:hover, .dropdown-menu > .active > a.pink:focus {
+    background: #c12680;
+    background: linear-gradient(90deg,#c12680 0%, #f045b7 50%, #c12680 100%);
+}
+
+.dropdown-menu > .active > a.red, .dropdown-menu > .active > a.red:hover, .dropdown-menu > .active > a.red:focus {
+    background: #df1717;
+    background: linear-gradient(90deg,#df1717 0%, #ff1b39 50%, #df1717 100%);
+}
+
+.dropdown-menu > .active > a.orange, .dropdown-menu > .active > a.orange:hover, .dropdown-menu > .active > a.orange:focus {
+    background: #e98707 ;
+    background: linear-gradient(90deg,#e98707 0%, #ffa229 50%, #e98707  100%);
+}
+
+.dropdown-menu > .active > a.green, .dropdown-menu > .active > a.green:hover, .dropdown-menu > .active > a.green:focus {
+    background: #3fcc56 ;
+    background: linear-gradient(90deg,#3fcc56 0%, #4bd863 50%, #3fcc56  100%);
+}
+
+.dropdown-menu > .active > a.blue, .dropdown-menu > .active > a.blue:hover, .dropdown-menu > .active > a.blue:focus {
+    background: #2172b8 ;
+    background: linear-gradient(90deg,#2172b8 0%, #3390e0 50%, #2172b8  100%);
+}
+
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
@@ -641,11 +760,6 @@ ul ul .menu-item-has-children.pull-left>.dropdown-menu {
     color: #fff;
 }
 
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgb(243, 19, 19) 0%, rgb(253, 122, 14) 50%, rgb(243, 19, 19) 100%);
-
-}
 .navbar-toggle {
     border: 1px solid #fff;
 }
@@ -2296,19 +2410,6 @@ span.extra-comments-meta a {
     }
 }
 
-.transtion-fluid {
-       /* border: 1px solid white;
-        background-color: white;*/
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg,#c12680 0%, #f045b7 50%, #c12680 100%);
-    border-radius: 48% 52% 31% 69% / 56% 62% 38% 44%;
-    transition: ease-out 2s;
-}
-
-.transtion-fluid:hover {
-   border-radius: 64% 36% 66% 34% / 52% 44% 56% 48%;
-
-}
 
 .navbar-brand .site-branding-text h1.site-title a,.navbar-brand .site-branding-text .site-title a,
 .navbar-brand .site-branding-text .site-description {
@@ -2322,12 +2423,13 @@ span.extra-comments-meta a {
 }
 
 ::-moz-selection { /* Code for Firefox */
-    background-color: rgb(253, 122, 14);
-    opacity: 1;
+    background-color: rgb(255, 255, 255);
+    color: #000;
   }
   
   ::selection {
-    background-color: rgb(253, 122, 14);
+    background-color: rgb(255, 255, 255);
+    color: #000;
   }
 
 /* Preloader */

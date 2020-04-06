@@ -125,8 +125,12 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 				$classes[] = 'active';
 			}
 			// Add some additional default classes to the item.
+			//Set color from ACF
 			$classes[] = 'menu-item-' . $item->ID;
 			$classes[] = 'nav-item';
+			$classes[] = get_field('color');
+
+
 			// Allow filtering the classes.
 			$classes = apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args, $depth );
 			// Form a string of classes in format: class="class_names".
@@ -169,7 +173,8 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 				$atts['href'] = ! empty( $item->url ) ? $item->url : '#';
 				// Items in dropdowns use .dropdown-item instead of .nav-link.
 				if ( $depth > 0 ) {
-					$atts['class'] = 'dropdown-item';
+					$atts['class'] = 'dropdown-item '.get_field('color');
+
 				} else {
 					$atts['class'] = 'nav-link';
 				}
