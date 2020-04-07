@@ -162,6 +162,7 @@ a, a:active, a:hover, a:focus {
 .navbar-default .navbar-nav > li:last-child > a {
     padding: 5px;
     margin-top: 25px;
+    margin-left: 10px;
     border: 2px solid;
     border-color: #c12680;
     border-radius: 5px;
@@ -457,7 +458,6 @@ a:active {
         margin-right: 15px;
         margin-left: 15px;
         text-align: center;
-        background: #c12680;
     }
 
     .menu-container {
@@ -948,6 +948,11 @@ select {
     margin-bottom: 20px;
     position: relative;
 }
+
+.widget_search .widget-title {
+    display: none;
+}
+
 .widget ul {
     padding-left: 0;
     list-style-type: none;
@@ -1097,7 +1102,6 @@ h1.site-title, .site-title {
 
 #site-navigation .container {
     position: relative;
-    padding-left: 85px;
 
 }
 
