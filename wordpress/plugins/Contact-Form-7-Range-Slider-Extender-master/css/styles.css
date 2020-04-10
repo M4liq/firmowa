@@ -1,0 +1,12 @@
+.contactform7-output {
+	position: relative;
+	display: inline-block;
+	line-height: 1;
+	padding-right: 5px;
+	font-size: x-large;
+	color: white;
+}
+
+.wpcf7 input[type="range"] {
+	display: inline-block;
+}

@@ -3,9 +3,11 @@
 
 jQuery( document ).ready( function ( $ ) {
     'use strict';
+  
 
     $(window).load(function() {
         $('.preloader').fadeOut(1000);
+        $('.lang-no').parent().hide();
      });
   
     $( '.navbar .dropdown-toggle' ).hover( function () {
@@ -119,6 +121,15 @@ jQuery( document ).ready( function ( $ ) {
             }
         } );
     } );
+    
+   // $('#textbox1').val(this.checked);
+
+   var displaiedLang = false;
+   $('input[name ="lang"]').change( function() {  
+       if(!displaiedLang){$('.lang-no').parent().fadeIn(); displaiedLang=true;} 
+       else {$('.lang-no').parent().fadeOut(); displaiedLang=false;}; 
+
+    });
 
     $( document ).on( 'click', '.button.ajax_add_to_cart', function ( e ) {
         e.preventDefault();
